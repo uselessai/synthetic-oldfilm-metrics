@@ -1,0 +1,2 @@
+description,output_file,era,apply_vignette_globally,blob_prob,scratch_prob,color_tone,color_tone_strength,apply_clean_bw,apply_soft_bw,scratch_count,scratch_positions
+Degradación automática para 006,006_style_001.mp4,vhs,False,0.04,0.28,rose,0.7,True,False,2,"229,213"
