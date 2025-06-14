@@ -4,7 +4,7 @@ Work in progress
 
 
 ## Sample Videos
-
+All videos can be found in videos folder.
 
 | Video | CSV |
 |-------|-----|
