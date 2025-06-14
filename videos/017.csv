@@ -1,0 +1,2 @@
+description,output_file,era,apply_vignette_globally,blob_prob,scratch_prob,color_tone,color_tone_strength,apply_clean_bw,apply_soft_bw,scratch_count,scratch_positions
+Degradación automática para 017,017_style_001.mp4,1920s,False,0.08,0.37,sepia,0.58,True,False,5,"104,112,250,33,295"

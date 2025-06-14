@@ -1,0 +1,2 @@
+description,output_file,era,apply_vignette_globally,blob_prob,scratch_prob,color_tone,color_tone_strength,apply_clean_bw,apply_soft_bw,scratch_count,scratch_positions
+Degradación automática para 023,023_style_001.mp4,1920s,True,0.04,0.05,,0.11,True,False,5,"132,264,222,103,132"

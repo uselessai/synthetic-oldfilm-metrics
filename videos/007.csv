@@ -1,0 +1,2 @@
+description,output_file,era,apply_vignette_globally,blob_prob,scratch_prob,color_tone,color_tone_strength,apply_clean_bw,apply_soft_bw,scratch_count,scratch_positions
+Degradación automática para 007,007_style_001.mp4,1970s,False,0.08,0.22,blue,0.73,True,False,1,105

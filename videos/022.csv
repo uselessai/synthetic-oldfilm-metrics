@@ -1,0 +1,2 @@
+description,output_file,era,apply_vignette_globally,blob_prob,scratch_prob,color_tone,color_tone_strength,apply_clean_bw,apply_soft_bw,scratch_count,scratch_positions
+Degradación automática para 022,022_style_001.mp4,1970s,True,0.17,0.24,blue,0.63,False,True,1,297

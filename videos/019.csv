@@ -1,0 +1,2 @@
+description,output_file,era,apply_vignette_globally,blob_prob,scratch_prob,color_tone,color_tone_strength,apply_clean_bw,apply_soft_bw,scratch_count,scratch_positions
+Degradación automática para 019,019_style_001.mp4,1920s,True,0.01,0.27,,0.22,False,False,3,"314,293,270"

@@ -1,0 +1,2 @@
+description,output_file,era,apply_vignette_globally,blob_prob,scratch_prob,color_tone,color_tone_strength,apply_clean_bw,apply_soft_bw,scratch_count,scratch_positions
+Degradación automática para 018,018_style_001.mp4,1950s,True,0.05,0.29,sepia,0.72,False,True,3,"177,160,182"
