@@ -33,6 +33,7 @@ def main():
     if not root.exists():
         raise SystemExit(f"Root not found: {root}")
     groups = []
+    model_names = []
     for group_dir in sorted([p for p in root.iterdir() if p.is_dir()]):
         items = []
         for vid in sorted(group_dir.rglob('*')):
@@ -42,6 +43,7 @@ def main():
                 items.append((rel, title))
         if items:
             groups.append((group_dir.name, items))
+            model_names.append(group_dir.name)
 
     # Build JS content
     lines = []
@@ -56,6 +58,58 @@ def main():
         lines.append("    ]\n  }" + comma_g)
     lines.append('];')
 
+    # Build comparative structure (rows by scene name, columns by model)
+    # Map: name -> model -> [file candidates]
+    tmp = {}
+    for gname, items in groups:
+        for rel, _title in items:
+            name = Path(rel).stem
+            tmp.setdefault(name, {}).setdefault(gname, []).append(rel)
+
+    def choose_best(paths):
+        best = None
+        best_rank = 1e9
+        for p in paths:
+            ext = Path(p).suffix.lower()
+            try:
+                rank = PLAYABLE_ORDER.index(ext)
+            except ValueError:
+                rank = 1e9
+            if rank < best_rank:
+                best_rank = rank
+                best = p
+        return best
+
+    # Optional: stabilize model order if common models are present
+    preferred_order = ['RRTN', 'Templateadapted', 'Pre-compositedLQ']
+    models_sorted = [m for m in preferred_order if m in model_names] + [m for m in model_names if m not in preferred_order]
+
+    rows = []
+    for name in sorted(tmp.keys()):
+        items = {}
+        for m in models_sorted:
+            paths = tmp[name].get(m)
+            if paths:
+                items[m] = choose_best(paths)
+        if items:
+            rows.append((name, items))
+
+    lines.append('')
+    lines.append('window.videoComparisons = {')
+    lines.append("  models: [" + ", ".join([f"'{m}'" for m in models_sorted]) + "],")
+    lines.append('  rows: [')
+    for i, (name, items) in enumerate(rows):
+        comma = ',' if i < len(rows) - 1 else ''
+        lines.append(f"    {{ name: '{js_escape(name)}', items: {{")
+        inner = []
+        for m in models_sorted:
+            if m in items:
+                inner.append(f"      '{js_escape(m)}': '{js_escape(items[m])}'")
+        lines.extend(inner)
+        lines.append("    }} }" + comma)
+    lines.append('  ]')
+    lines.append('};')
+
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text('\n'.join(lines), encoding='utf-8')
     print(f"Wrote {out_path}")
@@ -63,4 +117,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
