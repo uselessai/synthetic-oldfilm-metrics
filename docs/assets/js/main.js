@@ -8,7 +8,7 @@
     const card = document.createElement('article');
     card.className = 'video-card';
     const header = document.createElement('header');
-    header.textContent = (modelLabel ? modelLabel + ' — ' : '') + (item.title || item.file);
+    header.textContent = modelLabel || '';
     const footer = document.createElement('footer');
     footer.textContent = item.caption || '';
 
@@ -67,35 +67,16 @@
     const table = document.createElement('div');
     table.className = 'compare-table';
 
-    // Header row
-    const headerRow = document.createElement('div');
-    headerRow.className = 'compare-row compare-header';
-    const headFirst = document.createElement('div');
-    headFirst.className = 'compare-cell compare-label';
-    headFirst.textContent = 'Scene';
-    headerRow.appendChild(headFirst);
-    data.models.forEach((m) => {
-      const c = document.createElement('div');
-      c.className = 'compare-cell';
-      c.textContent = m;
-      headerRow.appendChild(c);
-    });
-    table.appendChild(headerRow);
-
     // Data rows
     data.rows.forEach((row) => {
       const rowEl = document.createElement('div');
       rowEl.className = 'compare-row';
-      const label = document.createElement('div');
-      label.className = 'compare-cell compare-label';
-      label.textContent = row.name;
-      rowEl.appendChild(label);
       data.models.forEach((m) => {
         const cell = document.createElement('div');
         cell.className = 'compare-cell';
         const file = row.items[m];
         if (file) {
-          const item = { file: file, title: row.name };
+          const item = { file: file };
           cell.appendChild(renderCard(item, m));
         } else {
           const miss = document.createElement('div');

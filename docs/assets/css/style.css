@@ -47,7 +47,7 @@ body {
 .video-card footer { padding: 8px 12px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); }
 
 .compare-table { display: grid; gap: 10px; }
-.compare-row { display: grid; grid-template-columns: 180px repeat(3, minmax(260px, 1fr)); gap: 10px; align-items: start; }
+.compare-row { display: grid; grid-template-columns: repeat(3, minmax(260px, 1fr)); gap: 10px; align-items: start; }
 .compare-header { font-weight: 600; color: var(--muted); }
 .compare-cell { background: transparent; }
 .compare-label { padding: 8px 4px; color: var(--muted); word-break: break-word; }
