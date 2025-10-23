@@ -3,38 +3,36 @@
 
 window.videoGroups = [
   {
-    title: 'Style 001',
+    title: 'RRTN',
     items: [
-      { file: 'videos/style_001/000_style_001.mp4', title: 'Clip 000', caption: 'Style 001' },
-      { file: 'videos/style_001/001_style_001.mp4', title: 'Clip 001', caption: 'Style 001' },
-      { file: 'videos/style_001/002_style_001.mp4', title: 'Clip 002', caption: 'Style 001' },
-      { file: 'videos/style_001/003_style_001.mp4', title: 'Clip 003', caption: 'Style 001' },
-      { file: 'videos/style_001/004_style_001.mp4', title: 'Clip 004', caption: 'Style 001' },
-      { file: 'videos/style_001/005_style_001.mp4', title: 'Clip 005', caption: 'Style 001' },
-      { file: 'videos/style_001/006_style_001.mp4', title: 'Clip 006', caption: 'Style 001' },
-      { file: 'videos/style_001/007_style_001.mp4', title: 'Clip 007', caption: 'Style 001' },
-      { file: 'videos/style_001/008_style_001.mp4', title: 'Clip 008', caption: 'Style 001' },
-      { file: 'videos/style_001/009_style_001.mp4', title: 'Clip 009', caption: 'Style 001' },
-      { file: 'videos/style_001/010_style_001.mp4', title: 'Clip 010', caption: 'Style 001' },
-      { file: 'videos/style_001/011_style_001.mp4', title: 'Clip 011', caption: 'Style 001' },
-      { file: 'videos/style_001/012_style_001.mp4', title: 'Clip 012', caption: 'Style 001' },
-      { file: 'videos/style_001/013_style_001.mp4', title: 'Clip 013', caption: 'Style 001' },
-      { file: 'videos/style_001/014_style_001.mp4', title: 'Clip 014', caption: 'Style 001' },
-      { file: 'videos/style_001/015_style_001.mp4', title: 'Clip 015', caption: 'Style 001' },
-      { file: 'videos/style_001/016_style_001.mp4', title: 'Clip 016', caption: 'Style 001' },
-      { file: 'videos/style_001/017_style_001.mp4', title: 'Clip 017', caption: 'Style 001' },
-      { file: 'videos/style_001/018_style_001.mp4', title: 'Clip 018', caption: 'Style 001' },
-      { file: 'videos/style_001/019_style_001.mp4', title: 'Clip 019', caption: 'Style 001' },
-      { file: 'videos/style_001/020_style_001.mp4', title: 'Clip 020', caption: 'Style 001' },
-      { file: 'videos/style_001/021_style_001.mp4', title: 'Clip 021', caption: 'Style 001' },
-      { file: 'videos/style_001/022_style_001.mp4', title: 'Clip 022', caption: 'Style 001' },
-      { file: 'videos/style_001/023_style_001.mp4', title: 'Clip 023', caption: 'Style 001' },
-      { file: 'videos/style_001/024_style_001.mp4', title: 'Clip 024', caption: 'Style 001' },
-      { file: 'videos/style_001/025_style_001.mp4', title: 'Clip 025', caption: 'Style 001' },
-      { file: 'videos/style_001/026_style_001.mp4', title: 'Clip 026', caption: 'Style 001' },
-      { file: 'videos/style_001/027_style_001.mp4', title: 'Clip 027', caption: 'Style 001' },
-      { file: 'videos/style_001/028_style_001.mp4', title: 'Clip 028', caption: 'Style 001' },
-      { file: 'videos/style_001/029_style_001.mp4', title: 'Clip 029', caption: 'Style 001' }
+      { file: 'videos/RRTN/Anna_Christie_escena005.avi', title: 'Anna Christie 005' },
+      { file: 'videos/RRTN/Anna_Christie_escena038.avi', title: 'Anna Christie 038' },
+      { file: 'videos/RRTN/La_edad_de_Oro_1930_escena026.avi', title: 'La edad de Oro 026' },
+      { file: 'videos/RRTN/La_edad_de_Oro_1930_escena045.avi', title: 'La edad de Oro 045' },
+      { file: 'videos/RRTN/nosferatu_escena017.avi', title: 'Nosferatu 017' },
+      { file: 'videos/RRTN/nosferatu_escena029.avi', title: 'Nosferatu 029' }
+    ]
+  },
+  {
+    title: 'Templateadapted',
+    items: [
+      { file: 'videos/Templateadapted/Anna_Christie_escena005.avi', title: 'Anna Christie 005' },
+      { file: 'videos/Templateadapted/Anna_Christie_escena038.avi', title: 'Anna Christie 038' },
+      { file: 'videos/Templateadapted/La_edad_de_Oro_1930_escena026.avi', title: 'La edad de Oro 026' },
+      { file: 'videos/Templateadapted/La_edad_de_Oro_1930_escena045.avi', title: 'La edad de Oro 045' },
+      { file: 'videos/Templateadapted/nosferatu_escena017.avi', title: 'Nosferatu 017' },
+      { file: 'videos/Templateadapted/nosferatu_escena029.avi', title: 'Nosferatu 029' }
+    ]
+  },
+  {
+    title: 'Pre-compositedLQ',
+    items: [
+      { file: 'videos/Pre-compositedLQ/Anna_Christie_escena005.avi', title: 'Anna Christie 005' },
+      { file: 'videos/Pre-compositedLQ/Anna_Christie_escena038.avi', title: 'Anna Christie 038' },
+      { file: 'videos/Pre-compositedLQ/La_edad_de_Oro_1930_escena026.avi', title: 'La edad de Oro 026' },
+      { file: 'videos/Pre-compositedLQ/La_edad_de_Oro_1930_escena045.avi', title: 'La edad de Oro 045' },
+      { file: 'videos/Pre-compositedLQ/nosferatu_escena017.avi', title: 'Nosferatu 017' },
+      { file: 'videos/Pre-compositedLQ/nosferatu_escena029.avi', title: 'Nosferatu 029' }
     ]
   }
 ];

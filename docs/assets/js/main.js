@@ -9,15 +9,38 @@
     card.className = 'video-card';
     const header = document.createElement('header');
     header.textContent = item.title || item.file;
-    const video = document.createElement('video');
-    video.src = item.file;
-    video.controls = true;
-    video.preload = 'metadata';
     const footer = document.createElement('footer');
     footer.textContent = item.caption || '';
-    card.appendChild(header);
-    card.appendChild(video);
-    card.appendChild(footer);
+
+    const lower = (item.file || '').toLowerCase();
+    const isInlinePlayable = /\.(mp4|webm|ogv)$/i.test(lower);
+    if (isInlinePlayable) {
+      const video = document.createElement('video');
+      video.src = item.file;
+      video.controls = true;
+      video.preload = 'metadata';
+      card.appendChild(header);
+      card.appendChild(video);
+      card.appendChild(footer);
+    } else {
+      const linkWrap = document.createElement('div');
+      linkWrap.style.padding = '12px';
+      const a = document.createElement('a');
+      a.href = item.file;
+      a.textContent = 'Open / download video';
+      a.target = '_blank';
+      a.rel = 'noopener';
+      const hint = document.createElement('div');
+      hint.style.color = 'var(--muted)';
+      hint.style.fontSize = '13px';
+      hint.style.marginTop = '6px';
+      hint.textContent = 'Note: Some browsers do not play AVI inline.';
+      linkWrap.appendChild(a);
+      linkWrap.appendChild(hint);
+      card.appendChild(header);
+      card.appendChild(linkWrap);
+      card.appendChild(footer);
+    }
     return card;
   }
 
