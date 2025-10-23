@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="es">
+  <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Evaluating Restoration Robustness under Historically-Inspired Synthetic Degradation</title>
-    <meta name="description" content="Proyecto: Restauración robusta con degradaciones sintéticas inspiradas históricamente." />
+    <meta name="description" content="Project page: Robust restoration under historically-inspired synthetic degradations." />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
@@ -18,18 +18,18 @@
         </p>
         <p class="affiliation">Universidad Nacional Autónoma de México</p>
         <nav class="links">
-          <a href="https://github.com/uselessai/synthetic-oldfilm-metrics" target="_blank" rel="noopener">Código</a>
+          <a href="https://github.com/uselessai/synthetic-oldfilm-metrics" target="_blank" rel="noopener">Code</a>
           <span class="sep">|</span>
-          <span class="disabled">Paper (próximamente)</span>
+          <span class="disabled">Paper (coming soon)</span>
           <span class="sep">|</span>
           <a href="#videos">Videos</a>
           <span class="sep">|</span>
-          <a href="#abstract">Resumen</a>
+          <a href="#abstract">Abstract</a>
           <span class="sep">|</span>
-          <a href="#metodo">Método</a>
+          <a href="#method">Method</a>
         </nav>
         <div class="teaser">
-          <img src="assets/img/teaser.svg" alt="Teaser del proyecto" />
+          <img src="assets/img/teaser.svg" alt="Project teaser image" />
         </div>
       </div>
     </header>
@@ -37,37 +37,37 @@
     <main>
       <section id="abstract" class="section">
         <div class="container">
-          <h2>Resumen</h2>
+          <h2>Abstract</h2>
           <p>
-            Presentamos una metodología basada en banco de pruebas para estudiar cómo
-            degradaciones sintéticas inspiradas en material histórico afectan el desempeño de
-            modelos de restauración de video. Con una tubería modular, generamos artefactos
-            artificiales sobre secuencias limpias y analizamos su impacto en la restauración.
+            We present a benchmark-driven methodology to study how historically-inspired
+            synthetic degradations affect the performance of video restoration models. Using a
+            modular pipeline, we generate artefacts on clean sequences and analyze their
+            impact on restoration quality.
           </p>
-          <p class="note">Nota: Resultados numéricos y material del paper se publicarán más adelante.</p>
+          <p class="note">Note: Numerical results and the camera-ready will be posted later.</p>
         </div>
       </section>
 
-      <section id="metodo" class="section">
+      <section id="method" class="section">
         <div class="container">
-          <h2>Visión general del método</h2>
+          <h2>Method Overview</h2>
           <div class="grid two">
             <div>
               <p>
-                La herramienta compone módulos de artefactos (p. ej., rayas, manchas,
-                viñeteo, parpadeo) de forma controlable y reproducible, generando datos
-                degradados que sirven para entrenar y evaluar modelos de restauración.
-                Se favorece la coherencia temporal y la variación controlada por presets.
+                The toolkit composes artefact modules (e.g., scratches, blobs, vignette,
+                flicker) in a controllable, reproducible manner to synthesize degraded data
+                used to train and evaluate restoration models. It promotes temporal coherence
+                and preset-controlled variation.
               </p>
               <ul class="bullets">
-                <li>Degradaciones atómicas y mezclas apiladas.</li>
-                <li>Semillas y configuraciones reproducibles.</li>
-                <li>Entrenamiento de backbones y evaluación comparativa.</li>
+                <li>Atomic degradations and stacked mixes</li>
+                <li>Reproducible seeds and configurations</li>
+                <li>Backbone training and comparative evaluation</li>
               </ul>
             </div>
             <figure class="figure">
-              <img src="assets/img/pipeline-placeholder.svg" alt="Esquema del pipeline" />
-              <figcaption>Esquema simplificado de la tubería de degradación y evaluación.</figcaption>
+              <img src="assets/img/pipeline-placeholder.svg" alt="Pipeline diagram" />
+              <figcaption>Simplified pipeline for degradation and evaluation.</figcaption>
             </figure>
           </div>
         </div>
@@ -75,30 +75,27 @@
 
       <section id="videos" class="section">
         <div class="container">
-          <h2>Galería de videos</h2>
+          <h2>Video Gallery</h2>
           <p>
-            A continuación algunos ejemplos generados por la tubería. Puedes reproducir cada
-            clip directamente. Para añadir más, coloca archivos <code>.mp4</code> en la carpeta
-            <code>videos/</code> del repositorio y actualiza <code>assets/data/videos.js</code>.
+            Below are a few examples generated by the pipeline. To add more, place
+            <code>.mp4</code> files under <code>docs/videos/</code> (organized by subfolders) and
+            update <code>assets/data/videos.js</code> accordingly.
           </p>
-          <div id="video-grid" class="video-grid"></div>
+          <div id="video-groups"></div>
         </div>
       </section>
 
       <section id="contacto" class="section">
         <div class="container">
-          <h2>Contacto</h2>
-          <p>
-            Para dudas o colaboración, por favor abre un issue en el repositorio o
-            contáctanos por correo.
-          </p>
+          <h2>Contact</h2>
+          <p>For questions or collaboration, please open an issue or reach out by email.</p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container">
-        <p>© UNAM · Proyecto de investigación de restauración de video. Esta página no contiene datos del paper aún.</p>
+        <p>© UNAM · Research project on video restoration. This page does not include paper data yet.</p>
       </div>
     </footer>
 
@@ -106,4 +103,3 @@
     <script src="assets/js/main.js"></script>
   </body>
   </html>
-

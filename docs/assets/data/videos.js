@@ -1,35 +1,40 @@
-// Lista de videos para la galería (rutas relativas al root del repo)
-// Para añadir más, agrega el .mp4 a la carpeta `videos/` y crea otra entrada.
+// Video groups for the gallery. Each group has a title and items.
+// Files are relative to `docs/` because GitHub Pages serves from there.
 
-window.videosData = [
-  { file: "videos/000_style_001.mp4", title: "Clip 000", caption: "Estilo 001" },
-  { file: "videos/001_style_001.mp4", title: "Clip 001", caption: "Estilo 001" },
-  { file: "videos/002_style_001.mp4", title: "Clip 002", caption: "Estilo 001" },
-  { file: "videos/003_style_001.mp4", title: "Clip 003", caption: "Estilo 001" },
-  { file: "videos/004_style_001.mp4", title: "Clip 004", caption: "Estilo 001" },
-  { file: "videos/005_style_001.mp4", title: "Clip 005", caption: "Estilo 001" },
-  { file: "videos/006_style_001.mp4", title: "Clip 006", caption: "Estilo 001" },
-  { file: "videos/007_style_001.mp4", title: "Clip 007", caption: "Estilo 001" },
-  { file: "videos/008_style_001.mp4", title: "Clip 008", caption: "Estilo 001" },
-  { file: "videos/009_style_001.mp4", title: "Clip 009", caption: "Estilo 001" },
-  { file: "videos/010_style_001.mp4", title: "Clip 010", caption: "Estilo 001" },
-  { file: "videos/011_style_001.mp4", title: "Clip 011", caption: "Estilo 001" },
-  { file: "videos/012_style_001.mp4", title: "Clip 012", caption: "Estilo 001" },
-  { file: "videos/013_style_001.mp4", title: "Clip 013", caption: "Estilo 001" },
-  { file: "videos/014_style_001.mp4", title: "Clip 014", caption: "Estilo 001" },
-  { file: "videos/015_style_001.mp4", title: "Clip 015", caption: "Estilo 001" },
-  { file: "videos/016_style_001.mp4", title: "Clip 016", caption: "Estilo 001" },
-  { file: "videos/017_style_001.mp4", title: "Clip 017", caption: "Estilo 001" },
-  { file: "videos/018_style_001.mp4", title: "Clip 018", caption: "Estilo 001" },
-  { file: "videos/019_style_001.mp4", title: "Clip 019", caption: "Estilo 001" },
-  { file: "videos/020_style_001.mp4", title: "Clip 020", caption: "Estilo 001" },
-  { file: "videos/021_style_001.mp4", title: "Clip 021", caption: "Estilo 001" },
-  { file: "videos/022_style_001.mp4", title: "Clip 022", caption: "Estilo 001" },
-  { file: "videos/023_style_001.mp4", title: "Clip 023", caption: "Estilo 001" },
-  { file: "videos/024_style_001.mp4", title: "Clip 024", caption: "Estilo 001" },
-  { file: "videos/025_style_001.mp4", title: "Clip 025", caption: "Estilo 001" },
-  { file: "videos/026_style_001.mp4", title: "Clip 026", caption: "Estilo 001" },
-  { file: "videos/027_style_001.mp4", title: "Clip 027", caption: "Estilo 001" },
-  { file: "videos/028_style_001.mp4", title: "Clip 028", caption: "Estilo 001" },
-  { file: "videos/029_style_001.mp4", title: "Clip 029", caption: "Estilo 001" }
+window.videoGroups = [
+  {
+    title: 'Style 001',
+    items: [
+      { file: 'videos/style_001/000_style_001.mp4', title: 'Clip 000', caption: 'Style 001' },
+      { file: 'videos/style_001/001_style_001.mp4', title: 'Clip 001', caption: 'Style 001' },
+      { file: 'videos/style_001/002_style_001.mp4', title: 'Clip 002', caption: 'Style 001' },
+      { file: 'videos/style_001/003_style_001.mp4', title: 'Clip 003', caption: 'Style 001' },
+      { file: 'videos/style_001/004_style_001.mp4', title: 'Clip 004', caption: 'Style 001' },
+      { file: 'videos/style_001/005_style_001.mp4', title: 'Clip 005', caption: 'Style 001' },
+      { file: 'videos/style_001/006_style_001.mp4', title: 'Clip 006', caption: 'Style 001' },
+      { file: 'videos/style_001/007_style_001.mp4', title: 'Clip 007', caption: 'Style 001' },
+      { file: 'videos/style_001/008_style_001.mp4', title: 'Clip 008', caption: 'Style 001' },
+      { file: 'videos/style_001/009_style_001.mp4', title: 'Clip 009', caption: 'Style 001' },
+      { file: 'videos/style_001/010_style_001.mp4', title: 'Clip 010', caption: 'Style 001' },
+      { file: 'videos/style_001/011_style_001.mp4', title: 'Clip 011', caption: 'Style 001' },
+      { file: 'videos/style_001/012_style_001.mp4', title: 'Clip 012', caption: 'Style 001' },
+      { file: 'videos/style_001/013_style_001.mp4', title: 'Clip 013', caption: 'Style 001' },
+      { file: 'videos/style_001/014_style_001.mp4', title: 'Clip 014', caption: 'Style 001' },
+      { file: 'videos/style_001/015_style_001.mp4', title: 'Clip 015', caption: 'Style 001' },
+      { file: 'videos/style_001/016_style_001.mp4', title: 'Clip 016', caption: 'Style 001' },
+      { file: 'videos/style_001/017_style_001.mp4', title: 'Clip 017', caption: 'Style 001' },
+      { file: 'videos/style_001/018_style_001.mp4', title: 'Clip 018', caption: 'Style 001' },
+      { file: 'videos/style_001/019_style_001.mp4', title: 'Clip 019', caption: 'Style 001' },
+      { file: 'videos/style_001/020_style_001.mp4', title: 'Clip 020', caption: 'Style 001' },
+      { file: 'videos/style_001/021_style_001.mp4', title: 'Clip 021', caption: 'Style 001' },
+      { file: 'videos/style_001/022_style_001.mp4', title: 'Clip 022', caption: 'Style 001' },
+      { file: 'videos/style_001/023_style_001.mp4', title: 'Clip 023', caption: 'Style 001' },
+      { file: 'videos/style_001/024_style_001.mp4', title: 'Clip 024', caption: 'Style 001' },
+      { file: 'videos/style_001/025_style_001.mp4', title: 'Clip 025', caption: 'Style 001' },
+      { file: 'videos/style_001/026_style_001.mp4', title: 'Clip 026', caption: 'Style 001' },
+      { file: 'videos/style_001/027_style_001.mp4', title: 'Clip 027', caption: 'Style 001' },
+      { file: 'videos/style_001/028_style_001.mp4', title: 'Clip 028', caption: 'Style 001' },
+      { file: 'videos/style_001/029_style_001.mp4', title: 'Clip 029', caption: 'Style 001' }
+    ]
+  }
 ];
