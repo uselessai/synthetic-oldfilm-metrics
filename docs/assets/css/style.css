@@ -1,0 +1,50 @@
+/* Minimal, clean academic-style layout inspired by project pages */
+:root {
+  --bg: #0b0b0c;
+  --text: #e9eaee;
+  --muted: #b5b8c3;
+  --accent: #7bd3ff;
+  --card: #15161a;
+  --line: #252730;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.container { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+.site-header { padding: 28px 0 24px; border-bottom: 1px solid var(--line); background: linear-gradient(180deg, #0b0b0c, #0b0b0c 60%, #0f1115); }
+.site-header .title { margin: 8px 0 4px; font-size: 28px; letter-spacing: 0.2px; }
+.site-header .authors, .site-header .affiliation { margin: 4px 0; color: var(--muted); }
+.links { margin-top: 8px; color: var(--muted); }
+.links a { color: var(--accent); text-decoration: none; }
+.links .sep { margin: 0 8px; color: var(--line); }
+.links .disabled { opacity: 0.65; }
+.teaser { margin-top: 18px; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--card); }
+.teaser img { width: 100%; display: block; }
+
+.section { padding: 28px 0; border-bottom: 1px solid var(--line); }
+.section h2 { margin: 0 0 12px; font-size: 22px; }
+.section p { margin: 8px 0; }
+.note { color: var(--muted); font-style: italic; }
+
+.grid.two { display: grid; grid-template-columns: 1.2fr 1fr; gap: 18px; align-items: start; }
+@media (max-width: 900px) { .grid.two { grid-template-columns: 1fr; } }
+.bullets { margin: 8px 0 0 18px; padding: 0; }
+.bullets li { margin: 4px 0; }
+.figure { margin: 0; border: 1px solid var(--line); border-radius: 8px; background: var(--card); overflow: hidden; }
+.figure img { width: 100%; display: block; }
+.figure figcaption { padding: 8px 12px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
+
+.video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+.video-card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
+.video-card header { padding: 10px 12px; border-bottom: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+.video-card video { width: 100%; height: auto; display: block; background: #000; }
+.video-card footer { padding: 8px 12px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); }
+
+.site-footer { padding: 20px 0 28px; color: var(--muted); }
+

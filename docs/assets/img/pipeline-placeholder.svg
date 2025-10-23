@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1115"/>
+      <stop offset="1" stop-color="#151820"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <g font-family="Segoe UI, Roboto, Arial" fill="#e9eaee">
+    <text x="600" y="56" text-anchor="middle" font-size="28">Esquema del Pipeline (placeholder)</text>
+  </g>
+  <g stroke="#2b2f39" stroke-width="2" fill="#15161a">
+    <rect x="40" y="120" width="300" height="260" rx="10"/>
+    <rect x="450" y="120" width="300" height="260" rx="10"/>
+    <rect x="860" y="120" width="300" height="260" rx="10"/>
+  </g>
+  <g fill="#b5b8c3" font-size="18" font-family="Segoe UI, Roboto, Arial" text-anchor="middle">
+    <text x="190" y="180">Módulos de</text>
+    <text x="190" y="206">degradación</text>
+    <text x="600" y="180">Datos degradados</text>
+    <text x="600" y="206">+ entrenamiento</text>
+    <text x="1010" y="180">Aplicación</text>
+    <text x="1010" y="206">+ evaluación</text>
+  </g>
+  <g stroke="#7bd3ff" stroke-width="4" fill="none">
+    <path d="M 340 250 C 380 250 410 250 450 250"/>
+    <path d="M 750 250 C 800 250 830 250 860 250"/>
+  </g>
+</svg>
+
